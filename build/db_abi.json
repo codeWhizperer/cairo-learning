@@ -1,0 +1,75 @@
+[
+    {
+        "members": [
+            {
+                "name": "name",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "age",
+                "offset": 1,
+                "type": "felt"
+            },
+            {
+                "name": "gender",
+                "offset": 2,
+                "type": "felt"
+            }
+        ],
+        "name": "Students",
+        "size": 3,
+        "type": "struct"
+    },
+    {
+        "inputs": [
+            {
+                "name": "owner_address",
+                "type": "felt"
+            }
+        ],
+        "name": "constructor",
+        "outputs": [],
+        "type": "constructor"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_name",
+                "type": "felt"
+            },
+            {
+                "name": "_age",
+                "type": "felt"
+            },
+            {
+                "name": "student_address",
+                "type": "felt"
+            },
+            {
+                "name": "_gender",
+                "type": "felt"
+            }
+        ],
+        "name": "store_details",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "address",
+                "type": "felt"
+            }
+        ],
+        "name": "get_name",
+        "outputs": [
+            {
+                "name": "name",
+                "type": "Students"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]

@@ -1,0 +1,16 @@
+["protostar.config"]
+protostar_version = "0.6.0"
+
+["protostar.project"]
+libs_path = "lib"
+
+["protostar.contracts"]
+main = [
+    "src/main.cairo",
+]
+db = [
+    "src/db.cairo"
+]
+
+["profile.testnet.protostar.deploy"]
+network="testnet"
