@@ -1,3 +1,0 @@
-[submodule "starknet_erc20"]
-	path = lib/starknet_erc20
-	url = https://github.com/starknet-edu/starknet-erc20
