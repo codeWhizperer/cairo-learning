@@ -2,8 +2,7 @@
 
 
 from starkware.cairo.common.cairo_builtins import HashBuiltin
-
-
+from starkware.starknet.common.syscalls import deploy
 
 // Build a program that stores students’ records (name, age, gender).
 
@@ -18,7 +17,7 @@ from starkware.cairo.common.cairo_builtins import HashBuiltin
 // **Hint**:
 
 // You can use a struct for student details.
-
+// Structs 
 struct Students{
     name:felt,
     age:felt,
@@ -26,7 +25,7 @@ struct Students{
 }
 
 @storage_var
-func admin_address() -> (res:felt){
+func admin_address() -> (address:felt){
 }
 
 @storage_var
@@ -46,12 +45,13 @@ func store_details{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check
     let _student_details = Students(_name, _age, _gender);
     student_details.write(student_address, _student_details);
     return();
-}
+}  
 
 @view
 func get_name{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(
     address : felt
-) -> (name: Students) {
-    let (name) = student_details.read(address);
+) -> (name: felt) {
+    let (info) = student_details.read(address);
+    let name = info.name;
     return (name=name);
 }

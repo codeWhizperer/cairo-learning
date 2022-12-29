@@ -79,7 +79,7 @@
             "pedersen",
             "range_check"
         ],
-        "compiler_version": "0.10.0",
+        "compiler_version": "0.10.3",
         "data": [
             "0x400380007ffc7ffd",
             "0x482680017ffc8000",

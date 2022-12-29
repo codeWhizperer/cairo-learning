@@ -1,15 +1,25 @@
 ["protostar.config"]
-protostar_version = "0.6.0"
+protostar_version = "0.9.0"
 
 ["protostar.project"]
 libs_path = "lib"
 
 ["protostar.contracts"]
-main = [
-    "src/main.cairo",
-]
+
 db = [
     "src/db.cairo"
+]
+
+ERC20 = [
+    "src/ERC20.cairo"
+]
+
+presale = [
+    "src/presale.cairo"
+]
+
+NFT = [
+    "src/NFT.cairo"
 ]
 
 ["profile.testnet.protostar.deploy"]
