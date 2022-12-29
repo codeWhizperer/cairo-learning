@@ -7,11 +7,11 @@ libs_path = "lib"
 ["protostar.contracts"]
 
 db = [
-    "src/db.cairo"
+    "src/contracts/db/db.cairo"
 ]
 
 ERC20 = [
-    "src/ERC20.cairo"
+    "src/contracts/erc20/ERC20.cairo"
 ]
 
 presale = [
@@ -19,7 +19,7 @@ presale = [
 ]
 
 NFT = [
-    "src/NFT.cairo"
+    "src/contracts/erc721/NFT.cairo"
 ]
 
 ["profile.testnet.protostar.deploy"]
