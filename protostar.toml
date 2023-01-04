@@ -15,7 +15,7 @@ ERC20 = [
 ]
 
 presale = [
-    "src/presale.cairo"
+    "src/contracts/presale/presale.cairo"
 ]
 
 NFT = [
