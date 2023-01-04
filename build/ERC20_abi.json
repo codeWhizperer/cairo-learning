@@ -69,10 +69,6 @@
                 "type": "felt"
             },
             {
-                "name": "total_supply",
-                "type": "Uint256"
-            },
-            {
                 "name": "recipient",
                 "type": "felt"
             }
@@ -209,6 +205,17 @@
                 "type": "felt"
             }
         ],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "amount",
+                "type": "Uint256"
+            }
+        ],
+        "name": "mint",
+        "outputs": [],
         "type": "function"
     },
     {
