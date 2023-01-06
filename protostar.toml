@@ -21,6 +21,8 @@ presale = [
 NFT = [
     "src/contracts/erc721/NFT.cairo"
 ]
-
+storage = [
+    "src/contracts/storage/storage.cairo"
+]
 ["profile.testnet.protostar.deploy"]
 network="testnet"
