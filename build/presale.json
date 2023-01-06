@@ -5834,6 +5834,10 @@
                 "size": 0,
                 "type": "struct"
             },
+            "src.interface.IERC20.IERC20.MINT_SELECTOR": {
+                "type": "const",
+                "value": 1329909728320632088402217562277154056711815095720684343816173432540100887380
+            },
             "src.interface.IERC20.IERC20.NAME_SELECTOR": {
                 "type": "const",
                 "value": 1528802474226268325865027367859591458315299653151958663884057507666229546336
