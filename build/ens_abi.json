@@ -1,0 +1,45 @@
+[
+    {
+        "data": [
+            {
+                "name": "address",
+                "type": "felt"
+            },
+            {
+                "name": "name",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "stored_name",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_name",
+                "type": "felt"
+            }
+        ],
+        "name": "store_ens_name",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "address",
+                "type": "felt"
+            }
+        ],
+        "name": "get_ens_name",
+        "outputs": [
+            {
+                "name": "user",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]

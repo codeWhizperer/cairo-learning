@@ -1,0 +1,103 @@
+[
+    {
+        "members": [
+            {
+                "name": "id",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "contractAddress",
+                "offset": 1,
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "offset": 2,
+                "type": "Uint256"
+            },
+            {
+                "name": "seller",
+                "offset": 4,
+                "type": "felt"
+            },
+            {
+                "name": "price",
+                "offset": 5,
+                "type": "felt"
+            },
+            {
+                "name": "status",
+                "offset": 6,
+                "type": "felt"
+            }
+        ],
+        "name": "Listing",
+        "size": 7,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "low",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "high",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Uint256",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "inputs": [
+            {
+                "name": "id",
+                "type": "felt"
+            }
+        ],
+        "name": "get_a_listing",
+        "outputs": [
+            {
+                "name": "token",
+                "type": "Listing"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "contract_address",
+                "type": "felt"
+            },
+            {
+                "name": "token_id",
+                "type": "Uint256"
+            },
+            {
+                "name": "price",
+                "type": "felt"
+            }
+        ],
+        "name": "listItem",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "id",
+                "type": "felt"
+            }
+        ],
+        "name": "buyToken",
+        "outputs": [],
+        "type": "function"
+    }
+]

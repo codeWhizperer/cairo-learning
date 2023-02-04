@@ -24,5 +24,18 @@ NFT = [
 storage = [
     "src/contracts/storage/storage.cairo"
 ]
+
+ens = [
+    "src/contracts/ens/ens.cairo"
+]
+
+market = [
+    "src/contracts/marketPlace/market.cairo"
+]
+
+voting = [
+    "src/contracts/voting/voting.cairo"
+]
+
 ["profile.testnet.protostar.deploy"]
 network="testnet"
